@@ -1,10 +1,10 @@
     global:
       resolve_timeout: 1m
-      slack_api_url: 'http://hooks.slack.com/services/xxxxxxxxxxxxxxxxxxxxxx' #TODO: Enter your Slack Webhook URL here
+      slack_api_url: 'https://hooks.slack.com/services/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' #TODO: Enter your Slack Webhook URL here
     receivers:
     - name: 'slack-notificaions'
       slack_configs:
-      - channel: '#upcommerce-devs' # TODO: Create a Slack Channel named upcommerce-devs in your Slack
+      - channel: '#alarmas-sre' # TODO: Create a Slack Channel named upcommerce-devs in your Slack
         send_resolved: true
     route:
       group_interval: 5m
